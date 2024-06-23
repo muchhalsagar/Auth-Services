@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/user', userRoutes);
+app.use('/Auth', userRoutes);
 dbConnection();
 
 console.log('Hello : ');
